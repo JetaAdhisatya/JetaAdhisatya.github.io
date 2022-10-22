@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Reservation | ABABA STEAK</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='./../CSS/reserve.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='icon' href="./../PHOTOS/logoxl.png">
+    <script src="./../JAVAS/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="./../PHOTOS/logoababababababab3.png" alt="" class="logo"></a>
+        <div>
+            <a href="index.html" class="Hyperlink index">Home</a>
+            <a href="menu.html" class="Hyperlink menu">Menu</a>
+            <a href="promo.html" class="Hyperlink promo">Promo</a>
+            <a href="abouts.html" class="Hyperlink aboutus">About Us</a>
+            <a href="reserve.html" class="Hyperlink reservation">Reservation</a>
+        </div>
+        
+        <div></div>
+    </div>
+
+    <div class="body">
+        <div class="title">Reserve a Table by Filling The Form Below</div>
+        <div class="title2">* is required</div>
+        <div class="form">
+            <div class="formbox">
+                <label for="">HONORIFIC*</label>
+                <select id="honorific" name="honorific" class="hnrbox">
+                    <option value="">Choose</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Mrs">Mrs.</option>
+                </select>
+            </div>
+            <div class="formbox">
+                <label for="name">NAME*</label>
+                <input type="text" name="name" id="name" placeholder="ex. John Smith"
+                class="formbedit">
+            </div>
+            <div class="formbox">
+                <label for="email">E-MAIL*</label>
+                <input type="text" name="email" id="email" placeholder="ex. yohanescng@gmail.com"
+                class="formbedit emailbox">
+            </div>
+            <div class="formbox">
+                <label for="phone">PHONE NUMBER*</label>
+                <input type="text" name="phone" id="phone" placeholder="ex. 084206972069"
+                maxlength="12" minlength="10" class="formbedit">
+            </div>
+            <div class="formbox">
+                <label for="date">RESERVATION DATE*</label>
+                <input type="date" name="date" id="date" class="formbedit datebox">
+            </div>
+            <div class="formbox">
+                <label for="time">RESERVATION TIME*</label>
+                <input type="time" name="time" id="time" class="formbedit timebox">
+            </div>
+            <div class="formbox">
+                <label for="person">PERSON(s)*</label>
+                <select id="person" name="person" class="formbedit personbox">
+                    <option value="">Choose</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12+">12+</option>
+                </select>
+            </div>
+            <div class="formbox">
+                <label for="disc">DISCOUNT CODE</label>
+                <input type="text" name="disc" id="disc" placeholder="ex. FOOD20"
+                class="formbedit discbox">
+            </div>
+            <div class="formbox msg">
+                <label for="msg">MESSAGE</label>
+                <div>
+                    <textarea type="text" name="msg" id="msg" rows="10" cols="100"
+                    placeholder="Enter  Message..." spellcheck="false" class="msgtxt"></textarea>
+                </div>
+            </div>
+            <button class="bttn" type="submit">
+                    Submit and Send
+            </button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="socials">
+            <div class="textfoot">
+                <a href="abouts.html" class ="aboutsfoot">About Us</a>
+                <a href="reserve.html" class ="reservefoot">Reservation</a>
+            </div>
+            <p class ="contactfoot">Contact Us</p>
+            <span class="logos">
+                <a href="https://www.instagram.com" class="socialogo insta" target="_blank"> <img src="./../PHOTOS/iglogo.png" class="socialogo insta"></i></a>
+                <a href="https://www.youtube.com" class="socialogo ytube" target="_blank"> <img src="./../PHOTOS/ytlogo.png" class="socialogo ytube"></i></a>
+                <a href="https://www.facebook.com" class="socialogo fbook" target="_blank"> <img src="./../PHOTOS/fblogo.png" class="socialogo fbook"></i></a>
+                <a href="https://www.twitter.com" class="socialogo tweet" target="_blank"> <img src="./../PHOTOS/twlogo.png" class="socialogo tweet"></i></a>
+            </span>
+        </div>
+        <div class="copyrightxt"> 
+            Copyright &copy; 2021 Ababa Steak . All Rights Reserved
+        </div>
+    </div>
+
+</body>
+</html>

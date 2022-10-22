@@ -1,0 +1,392 @@
+body{
+    background-image: url(./../PHOTOS/woodback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imgs{
+    width: 150px;
+    height: 150px;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+}
+
+.Hyperlink{
+    text-decoration: none;
+    margin-right: 120px;
+    color: black;
+    position: relative;
+    top: -30px;
+    transition: 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.index::after, .menu::after, .promo::after, .aboutus::after, .reservation::after{
+    background-color: #000000; 
+    bottom: -10%;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 5px;
+    transition: width 1s;
+}
+
+.index:hover::after, .menu:hover::after, .promo:hover::after, .aboutus:hover::after, .reservation:hover::after{
+    width:80%;
+    
+}
+
+.index{
+    color :white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.reservation:hover, .index:hover, .menu:hover, .promo:hover, .aboutus:hover{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* 
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cheese, .cola, .steak{
+    width: 530px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+} */
+
+
+
+.reservation:hover, .index:hover, .menu:hover, .promo:hover, .aboutUs:hover{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#slider{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#slider ul{
+    list-style: none;
+    position: relative;
+    width: 650px;
+    height: 500px;
+    overflow: hidden;
+    padding: 0;
+    animation: fade 3s;
+    border: 1px solid white;
+
+}
+
+#slider ul li img{
+    width: 650px;
+    height: 500px;
+}
+
+#slider ul li{
+    position: absolute;
+    display: none;
+}
+
+#prev{
+    animation: fade 3s;
+}
+
+#next{
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    from{
+        transform: translateY(20%);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#food{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.makanan{
+    color: rgb(219, 180, 96);
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+
+.pertama{
+    border-radius: 50%;
+    margin-left: 50px;
+    border: 1px solid rgb(233, 173, 7);
+}
+
+.pertama:hover{
+    box-shadow: 0 0 4px 4px rgba(150, 85, 0, 0.5);
+}
+
+.tulisan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.grilled, .t{
+    text-align: center;
+    font-size: 40px;
+}
+
+.our, .bone{
+    max-width: 600px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.t{
+    margin-left: -200px;
+    width: max-content;
+}
+
+.tbone{
+    margin-right: 200px;
+}
+
+.chicken{
+    margin-top: -5%;
+    margin-left: 10%;
+    color: white;
+}
+
+.chicken h2{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.tulisan2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.kedua{
+    border-radius: 50%;
+    margin-top: 100px;
+    border: 1px solid rgb(233, 173, 7);
+}
+
+.kedua:hover{
+    box-shadow: 0 0 4px 4px rgba(150, 85, 0, 0.5);
+}
+
+.tbone h2{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-left: 45%;
+}
+
+.tbone{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.menuu{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.menuuu{
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff; 
+    background-color: #8e553e;
+    border: none;
+    border-radius: 15px; 
+    box-shadow: 0 9px rgb(211, 114, 3);
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: #7e2b04;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.button:active{
+    background-color: #7e2b04;
+    box-shadow: 0 5px rgb(255, 208, 1);
+    transform: translateY(4px);
+}
+
+.card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.card1, .card2, .card3, .card4{
+    width:400px;
+    height:300px;
+    position:relative;
+    margin-right:50px;
+    border: 1px solid rgb(233, 173, 7);
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover{
+    box-shadow: 0 0 4px 4px rgba(150, 85, 0, 0.5);
+}
+
+.image1 , .image2{
+    width:400px;
+    height:300px;
+}
+
+.text{
+    font-size:20px;
+    width:100%;
+    position:absolute;
+    height:max-content;
+    text-align:center;
+    bottom:-55px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.footer{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1px;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    padding: 50px 0px;
+    color: white;
+}
+
+.textfoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.aboutsfoot{
+    font-size: 25px;
+    margin-right: 2%;
+    color: turquoise;
+    text-decoration: none;
+}
+
+.reservefoot{
+    font-size: 25px;
+    margin-left: 8%;
+    color: turquoise;
+    text-decoration: none;
+}
+
+.aboutsfoot:hover, .reservefoot:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.contactfoot{
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialogo{
+    width: 100px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ytube{
+    width: 60px;
+    margin-top: 3px;
+}
+
+.insta{
+    width: 50px;
+    margin-top: 1px;
+}
+
+.fbook{
+    width: 50px;
+}
+
+.tweet{
+    width: 56px;
+}
+
+.copyrightxt{
+    font-size: 15px;
+}
+
+.welcome{
+    color: white;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px black;
+}

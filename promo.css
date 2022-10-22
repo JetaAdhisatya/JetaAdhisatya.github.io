@@ -1,0 +1,222 @@
+body{
+    background-image: url(./../PHOTOS/woodback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+}
+
+.Hyperlink{
+    text-decoration: none;
+    margin-right: 120px;
+    color: black;
+    position: relative;
+    top: -30px;
+    transition: 0.5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.index::after, .menu::after, .promo::after, .aboutus::after, .reservation::after{
+    background-color: #000000; 
+    bottom: -10%;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 5px;
+    transition: width 1s;
+}
+
+.index:hover::after, .menu:hover::after, .promo:hover::after, .aboutus:hover::after, .reservation:hover::after{
+    width:80%;
+}
+
+.reservation:hover, .index:hover, .menu:hover, .promo:hover, .aboutus:hover{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.promo{
+    color :white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.promo-main-title {
+    margin: auto;
+    width: 50%;
+    font-size: 40px;
+    color: rgb(219, 180, 96);
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.promo-sub-title {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(219, 180, 96);
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.promo-box {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    width: 50%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+     /* background-color: rgba(255, 255, 255, 0.3) */
+}
+
+.promo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.promo-desc {
+    position: absolute;
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.promo-sub-desc {
+    float: left;
+    margin-top: 125px;
+    width: 400px;
+    margin-left: 20px;
+    font-size: 25px;
+    color: orange;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.promo-code {
+    float: right;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 2px 9px 13px rgba(0,0,0,0.51);
+}
+
+
+
+.footer{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    padding: 50px 0px;
+    color: white;
+}
+
+.textfoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.aboutsfoot{
+    font-size: 25px;
+    margin-right: 2%;
+    color: turquoise;
+    text-decoration: none;
+}
+
+.reservefoot{
+    font-size: 25px;
+    margin-left: 8%;
+    color: turquoise;
+    text-decoration: none;
+}
+
+.aboutsfoot:hover, .reservefoot:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.contactfoot{
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialogo{
+    width: 100px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ytube{
+    width: 60px;
+    margin-top: 3px;
+}
+
+.insta{
+    width: 50px;
+    margin-top: 1px;
+}
+
+.fbook{
+    width: 50px;
+}
+
+.tweet{
+    width: 56px;
+}
+
+.copyrightxt{
+    font-size: 15px;
+}
